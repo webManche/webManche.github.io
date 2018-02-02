@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" media="all" href="css/animate.css">
 
 </head>
 <body>
@@ -17,15 +18,16 @@
 		<div class="container"></div>
 		<div class="row">
 			<div class="col-lg-7">
-				<img class="header-amg" src="img/main-img.png" alt="Монитор">
+				<img class="header-amg wow fadeInLeftBig" src="img/main-img.png" alt="Монитор">
+				<video class="header-amg wow fadeIn" data-wow-delay="1.1s" src="img/video_3.mp4" autoplay="" loop="">
 			</div>
 			<div class="col-lg-5">
-				<p class="header-pretitle">Веб-разработчик</p>
-				<h1 class="header-title">Азимов Манучехр</h1>
-				<p class="header-subtitle">Верстка на HTML/CSS <br>
+				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+				<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Азимов Манучехр</h1>
+				<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 				Разработка сайтов под ключ</p>
-				<div class="header-button-block">
-					<button class="header-button">Связаться</button>
+				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+					<a href="https://vk.me/macho.gangster" class="header-button">Связаться</a>
 				<small>*Это бесплатно</small>
 				</div>
 			</div>
@@ -34,7 +36,7 @@
 
 	<section class="portfolio">
 		<div class="container">
-			<div class="portfolio-block">
+			<div class="portfolio-block wow fadeIn">
 			<h2 class="portfolio-title">Портфолио</h2>
 			<p class="portfolio-subtitle">Мои работы</p>
 			<div class="row">
@@ -62,28 +64,32 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-md-4">
 					<h4 class="footer-author">Азимов Манучехр</h4>
 					<p class="footer-text">Разработка сайтов под ключ</p>
 				</div>
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="#"><img src="img/socials/facebook-logo-button.png" alt="Facebook" class="facebook-logo"></a>
-						<a href="#"><img src="img/socials/telegram-symbol.png" alt="Telegram" class="telegram-logo"></a>
-						<a href="#"><img src="img/socials/vk-social-logotype.png" alt="vk" class="vk-logo"></a>
-						<a href="#"><img src="img/socials/youtube-symbol.png" alt="Youtube" class="youtube-logo"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://www.facebook.com/MachoGangster"><img  src="img/socials/facebook-logo-button.png" alt="Facebook" class="facebook-logo"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img  src="img/socials/telegram-symbol.png" alt="Telegram" class="telegram-logo"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/macho.gangster"><img  src="img/socials/vk-social-logotype.png" alt="vk" class="vk-logo"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img  src="img/socials/youtube-symbol.png" alt="Youtube" class="youtube-logo"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="footer-cta-block">
 					<p class="footer-cta">Напишите мне:</p>
-					<button class="footer-button">Написать</button>
+					<a href="https://vk.me/macho.gangster" class="footer-button">Написать</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
 
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
